@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="style.css">
+    <title>Sign-up Page</title>
+</head>
+<body>
+    <div class="navbar">
+        <h3>Home</h3>
+        <h2>About</h2>
+       <button id="login-nav">Login</button>
+       <button id="signup-nav">Sign Up</button>
+    </div>
+
+    <div class="container">
+        <img src="image.png">
+        <div class="login">
+            <h1>Login your credentials</h1>
+            <input id="username" placeholder="Username" ></i></input>
+            <input id="password" placeholder="Password"></input>
+             <p id="message-pwd">Password is <span id="strength-pwd"></span></p>
+            <button id="next">Next</button>
+            <h4>Don't have an account? <a id="switch-signup">Sign-up</a></h4>
+        </div>
+    </div>
+
+    <div class="signup-container">  /*style="display: none"*/
+       <img src="signup-img - Copy.webp">
+        <div class="signup">
+            <h1>Welcome!</h1>
+            <h3>Create your account</h3>
+            <input id="new-username" placeholder="Username">
+            <input id="new-email" placeholder="Email">
+            <input id="new-password" placeholder="Password">
+            <p id="new-message-pwd" style="display: none">Password is <span id="new-strength-pwd"></span></p>
+            <button id="register">Register</button>
+            <p>Already have an account? <a id="switch-login">Login</a></p>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>       
+</html>
