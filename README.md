@@ -31,7 +31,7 @@ Includes smooth transitions, localStorage for user data, and password strength i
 2. Open `index.html` (or your main HTML file) in a browser
 
 ```bash
-git clone https://github.com/yourusername/your-repo.git
+https://github.com/ananyyavijay/signup-page.git
 ```
 3. No server required — works on local file system
 
