@@ -32,7 +32,6 @@ document.querySelector('#switch-login').addEventListener('click', () => {
 //store email and pwd in localstorage
 
 document.getElementById("register").addEventListener("click", function() {
-    console.log("clicked")
 
 const signupEmail = document.querySelector("#new-email").value.trim();
 const signupUsername = document.querySelector("#new-username").value.trim();
@@ -123,4 +122,36 @@ newPassword.addEventListener('input', () => {
     }
 
 });
+
+//show inline message for invlid username for login contianer
+
+const nextBtn = document.getElementById("next")
+const registerBtn = document.getElementById("register")
+
+nextBtn.addEventListener("click", function(){
+    const usernameMsg = document.getElementById("username-msg")
+    const loginUsername = document.getElementById("username")
+
+    if(loginUsername.value.trim().length === 0){
+    usernameMsg.style.display = "block"
+    } else {
+        usernameMsg.style.display = "none";
+    }
 });
+})
+
+//hide/show password for login container
+
+const showPasswordLogin = document.querySelector(".showpasslogin")
+
+showPasswordLogin.onclick = function(){
+    if(password.type === "password"){
+        password.type = "text"
+        showPasswordLogin.className = "fa-solid fa-eye-slash showpasslogin"
+    }
+    else{
+        password.type = "password"
+        showPasswordLogin.className ="fa-solid fa-eye showpasslogin"
+    }
+}
+

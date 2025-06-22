@@ -20,23 +20,29 @@
         <img src="image.png">
         <div class="login">
             <h1>Login your credentials</h1>
-            <input id="username" placeholder="Username" ></i></input>
-            <input id="password" placeholder="Password"></input>
-             <p id="message-pwd">Password is <span id="strength-pwd"></span></p>
-            <button id="next">Next</button>
+            <input id="username" placeholder="Username" >
+            <p id="username-msg" style="display: none">Enter valid username</p>
+            <div>
+                <input type="password" id="password" placeholder="Password"><i class="fa-solid fa-eye showpasslogin"></i>
+                <p id="message-pwd">Password is <span id="strength-pwd"></span></p>
+            </div>
+            <button id="next" type="button">Next</button>
             <h4>Don't have an account? <a id="switch-signup">Sign-up</a></h4>
         </div>
     </div>
 
-    <div class="signup-container">  /*style="display: none"*/
+    <div class="signup-container">
        <img src="signup-img - Copy.webp">
         <div class="signup">
             <h1>Welcome!</h1>
             <h3>Create your account</h3>
             <input id="new-username" placeholder="Username">
+            <p id="new-username-msg" style="display: none">Enter valid username</p>
             <input id="new-email" placeholder="Email">
-            <input id="new-password" placeholder="Password">
-            <p id="new-message-pwd" style="display: none">Password is <span id="new-strength-pwd"></span></p>
+            <div>
+                 <input type="password" id="new-password" placeholder="Password">
+                 <p id="new-message-pwd" style="display: none">Password is <span id="new-strength-pwd"></span></p>
+            </div>
             <button id="register">Register</button>
             <p>Already have an account? <a id="switch-login">Login</a></p>
         </div>
