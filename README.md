@@ -13,12 +13,12 @@ Includes smooth transitions, localStorage for user data, and password strength i
 - Password strength checker
 - Responsive design with CSS flexbox
 - Smooth transition effects
+- Show/Hide password toggle
 
 ---
 
 ## ✨ Upcoming Features (Planned)
 
-- Show/Hide password toggle
 -  Email validation
 - Username availability check
 - Inline error messages
